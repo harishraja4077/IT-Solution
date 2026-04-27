@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career - Stackly IT Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="Images/logod.webp" alt="Stackly Logo">
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="career.html" class="btn">Career</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="page-hero">
+    <div class="hero-content fade">
+        <h1>Join Our Team</h1>
+        <p>We are hiring talented developers and designers to build innovative digital experiences.</p>
+    </div>
+</section>
+
+<section class="container">
+    <h2 class="openings-title">Current Openings</h2>
+    <div class="grid">
+        <div class="card fade">
+            <h3>Front-End Developer</h3>
+            <p>Create responsive web interfaces using modern JavaScript and UI design principles.</p>
+        </div>
+        <div class="card fade">
+            <h3>Mobile App Developer</h3>
+            <p>Build mobile applications that perform well on Android and iOS.</p>
+        </div>
+        <div class="card fade">
+            <h3>UI/UX Designer</h3>
+            <p>Design intuitive digital experiences and user-friendly interfaces.</p>
+        </div>
+    </div>
+
+    <form class="interactive-form" onsubmit="submitApplication(event)">
+        <div class="form-group">
+            <label for="applicant-name">Full Name</label>
+            <input type="text" id="applicant-name" required>
+            <span>✓</span>
+        </div>
+        <div class="form-group">
+            <label for="applicant-email">Email Address</label>
+            <input type="email" id="applicant-email" required>
+            <span>@</span>
+        </div>
+        <div class="form-group">
+            <label for="applicant-role">Role</label>
+            <select id="applicant-role" required>
+                <option value="">Select a role</option>
+                <option value="frontend">Front-End Developer</option>
+                <option value="mobile">Mobile App Developer</option>
+                <option value="design">UI/UX Designer</option>
+            </select>
+            <span>⌄</span>
+        </div>
+        <div class="form-group">
+            <label for="applicant-message">Why are you a good fit?</label>
+            <textarea id="applicant-message" rows="5" required></textarea>
+            <span>✎</span>
+        </div>
+        <button class="btn" type="submit">Submit Application</button>
+    </form>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
